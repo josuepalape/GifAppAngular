@@ -17,6 +17,7 @@ export class GifsService {
     if(localStorage.getItem('historial')){
       this._historial = JSON.parse(localStorage.getItem('historial')!);
     }
+    this.resultados = localStorage.getItem('resultados') ? JSON.parse(localStorage.getItem('resultados')!) : []
   }
 
   get historial():Array<string>{
