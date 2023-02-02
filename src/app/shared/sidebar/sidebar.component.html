@@ -4,7 +4,7 @@
         <hr class="text-white">
         <div class="list-group">
             <a href="#"  *ngFor="let buscado of historial" class="list-group-item list-group-item-action">
-                {{buscado}}
+                {{buscado | titlecase}}
             </a>
         </div>
     </div>
